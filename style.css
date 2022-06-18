@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container{
+    max-width: 1920px;
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+.background{
+    background-image: url("images/bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed; top: 0; left: 0;
+    filter: hue-rotate(221deg);
+    z-index: -1;
+}
+.menu{
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+}
+.menu-img{
+    width: 80px;
+}
+.menu-text{
+    color: aliceblue;
+    font-size: 20px;
+}
+.facts-inder{
+    display: flex;
+}
+.facts-img{
+    background-image: url("images/intro2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.facts-img-articl{
+    color: white;
+}
+.facts-content{
+    background-color: rgba(240, 255, 255, 0.762);
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.facts-btn{
+    color: azure;
+    background-color: rgba(0, 123, 255, 0.838);
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.plantes-articl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow:3px 3px rgb(0, 123, 255);
+    margin-top: 15px;
+}
+.plantes-img{
+  display: flex;
+  justify-content: space-around;
+}
+.img-carts{
+   width: 250px;
+   height: 350px;
+   margin-top: 15px;
+   position: relative;
+}
+.img-carts-img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 20px;
+}
+.plantes-text{
+   text-align: center;
+}
+.text-top{
+   position: absolute; top: 20px; left: 20px;
+   background: rgba(0, 123, 255, 0.838);
+   color: azure;
+   border-radius: 20px;
+   padding: 6px;
+}
+.text-bottom{
+    position: absolute; bottom: 20px; right: 20px;
+    background: rgba(0, 123, 255, 0.838);
+    color: azure;
+    border-radius: 20px;
+    padding: 5px;
+}
+.ecology-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.ecology-item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ecology-item1{
+    background-image: url("images/internet.jpg");
+}
+.ecology-item2{
+    background-image: url("images/events.jpg");
+}
+.ecology-item3{
+     background-image: url("images/friends.jpg");   
+}
+h3{
+    color: azure;
+    text-shadow:3px 3px rgb(0, 123, 255);
+    font-size: 30px;
+}
+.news-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news-left{
+    background-image: url("images/land0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:48% ;
+    height:300px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news-right{
+    width: 48%;
+    margin-left: 15px;
+    line-height: 23px;
+    color: azure;
+    font-size: 18px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid rgb(0, 115, 255);
+    background: transparent;
+    outline: none;
+    margin-bottom: 20px;
+    color: azure;
+    font-size: 18px;
+}
+input::placeholder{
+    color: azure;
+    font-size: 18px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: azure;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 115, 255);
+    font-size: 18px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+.form-img{
+    width: 50px;
+}
+@media(max-width:840px){
+.facts-inder{
+    flex-direction: column;
+}
+.facts-img,.facts-content{
+    width: 100%;
+}
+.menu{
+    display: none;
+}
+.plantes-img{
+    flex-direction: column;
+}
+.img-carts{
+    width: 100%;
+}
+.ecology-content{
+    flex-direction: column;
+}
+.ecology-item{
+    width: 100%;
+}
+.news-content{
+    flex-direction: column;
+}
+.news-left,.news-right{
+    width: 100%;
+}
+}
+@media(max-width:460px){
+.facts-content{
+    flex-direction: column;
+}  
+.facts-btn{
+    width: 90%;
+}
+input{
+    width: 100%;
+}
+}
